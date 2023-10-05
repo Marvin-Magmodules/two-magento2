@@ -16,8 +16,7 @@ interface RepositoryInterface
     public const CODE = 'two_payment';
 
     /** Endpoints */
-    public const API_LIVE = 'https://api.two.inc';
-    public const API_SANDBOX = 'https://sandbox.api.two.inc';
+    public const API_URL = 'payment/two_payment/api_url_%s';
 
     /** Payment Group */
     public const XML_PATH_ENABLED = 'payment/two_payment/active';

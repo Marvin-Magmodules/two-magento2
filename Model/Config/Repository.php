@@ -229,7 +229,7 @@ class Repository implements RepositoryInterface
      */
     public function getCheckoutHostUrl(): string
     {
-        return $this->getMode() === 'production' ? self::API_LIVE : self::API_SANDBOX;
+        return $this->getConfig(sprintf(self::API_URL, $this->getMode()));
     }
 
     /**
